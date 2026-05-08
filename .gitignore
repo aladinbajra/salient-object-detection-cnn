@@ -1,0 +1,58 @@
+# Python cache and local runtime files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+
+# Datasets must not be committed
+data/
+data/**
+
+# Model weights and checkpoints must be shared separately
+*.pt
+*.pth
+last_checkpoint.pth
+best_model.pth
+outputs/checkpoints/
+
+# Ignore generated outputs by default
+outputs/*
+
+# Keep only the final small evaluation evidence
+!outputs/evaluation_exp03_improved_v3_128_final/
+outputs/evaluation_exp03_improved_v3_128_final/*
+!outputs/evaluation_exp03_improved_v3_128_final/metrics.json
+!outputs/evaluation_exp03_improved_v3_128_final/sample_predictions.png
+
+!outputs/logs/
+outputs/logs/*
+!outputs/logs/exp03_improved_v3_128_final_history.csv
+
+!outputs/visualizations/
+outputs/visualizations/*
+!outputs/visualizations/exp03_improved_v3_128_final/
+outputs/visualizations/exp03_improved_v3_128_final/*
+!outputs/visualizations/exp03_improved_v3_128_final/validation_predictions.png
+
+# Submission documents are handled outside GitHub
+deliverables/
+project_report*
+Project_Report*
+presentation_slides*
+Presentation*
+*.docx
+*.pptx
+*.pdf
+
+# Archives and temporary logs
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.log
